@@ -1,0 +1,91 @@
+Date,Name,Location,Department,Clock in,Clock out,Break,Total hrs,Schedule hrs,Status
+May-01-2018,Shiva Manhar,Raipur HQ,Product,10:05,18:05,0 h 31 m ,8 h 44 m,9 h 0 m ,Approved
+May-01-2018,Akash Sharma,Raipur HQ,Product,10:05,19:05,0 h 20 m ,8 h 54 m,9 h 0 m ,Approved
+May-01-2018,Vipplove Vishwakarma,Raipur HQ,Product,10:05,19:05,0 h 19 m ,8 h 55 m,9 h 0 m ,Approved
+May-01-2018,Akash Chandrakar,Raipur HQ,Product,10:05,21:05,0 h 54 m ,11 h 21 m,12 h 0 m ,Unapproved
+May-02-2018,Shiva Manhar,Raipur HQ,Product,10:05,19:05,0 h 20 m ,9 h 2 m,9 h 0 m ,Approved
+May-02-2018,Vipplove Vishwakarma,Raipur HQ,Product,10:05,19:05,0 h 19 m ,9 h 7 m,9 h 0 m ,Approved
+May-02-2018,Akash Sharma,Raipur HQ,Product,10:05,19:05,0 h 50 m ,9 h 5 m,9 h 0 m ,Approved
+May-02-2018,Akash Chandrakar,Raipur HQ,Product,10:05,23:05,0 h 11 m ,12 h 15 m,12 h 0 m ,Unapproved
+May-02-2018,Kulbhushan Ugemuge,Raipur HQ,,21:05,23:05,0 h 0 m ,2 h 5 m,,Approved
+May-03-2018,Shiva Manhar,Raipur HQ,Product,10:05,19:05,2 h 31 m ,8 h 56 m,9 h 0 m ,Approved
+May-03-2018,Akash Chandrakar,Raipur HQ,Product,10:05,23:05,1 h 30 m ,13 h 21 m,12 h 0 m ,Unapproved
+May-03-2018,Vipplove Vishwakarma,Raipur HQ,Product,10:05,19:05,0 h 24 m ,9 h 1 m,9 h 0 m ,Approved
+May-03-2018,Akash Sharma,Raipur HQ,Product,10:05,19:05,0 h 41 m ,9 h 3 m,9 h 0 m ,Approved
+May-04-2018,Akash Sharma,Raipur HQ,,10:05,19:05,0 h 42 m ,8 h 58 m,,Approved
+May-04-2018,Vipplove Vishwakarma,Raipur HQ,,10:05,19:05,0 h 33 m ,8 h 58 m,,Approved
+May-04-2018,Shiva Manhar,Raipur HQ,Product,09:05,19:05,0 h 17 m ,9 h 22 m,9 h 0 m ,Approved
+May-04-2018,Akash Chandrakar,Raipur HQ,,08:05,20:05,0 h 0 m ,11 h 29 m,,Unapproved
+May-05-2018,Shiva Manhar,Raipur HQ,Product,09:05,19:05,0 h 23 m ,9 h 33 m,9 h 0 m ,Unapproved
+May-05-2018,Vipplove Vishwakarma,Raipur HQ,Product,10:05,12:05,0 h 22 m ,2 h 0 m,9 h 0 m ,Unapproved
+May-05-2018,Akash Chandrakar,Raipur HQ,Product,10:05,21:05,0 h 3 m ,10 h 10 m,12 h 0 m ,Unapproved
+May-05-2018,Akash Sharma,Raipur HQ,Product,10:05,19:05,0 h 33 m ,9 h 4 m,9 h 0 m ,Unapproved
+May-06-2018,Shiva Manhar,Raipur HQ,,14:05,20:05,0 h 0 m ,5 h 41 m,,Unapproved
+May-07-2018,Shiva Manhar,Raipur HQ,,09:05,19:05,0 h 10 m ,9 h 10 m,,Unapproved
+May-07-2018,Akash Chandrakar,Raipur HQ,,12:05,20:05,0 h 0 m ,8 h 1 m,,Unapproved
+May-07-2018,Akash Sharma,Raipur HQ,,10:05,20:05,0 h 22 m ,9 h 55 m,,Unapproved
+May-07-2018,Vipplove Vishwakarma,Raipur HQ,,10:05,20:05,0 h 21 m ,9 h 54 m,,Unapproved
+May-08-2018,Akash Chandrakar,Raipur HQ,Product,10:05,21:05,0 h 1 m ,11 h 30 m,,Unapproved
+May-08-2018,Vipplove Vishwakarma,Raipur HQ,Product,10:05,18:05,0 h 0 m ,7 h 12 m,,Unapproved
+May-08-2018,Akash Sharma,Raipur HQ,,10:05,19:05,0 h 13 m ,8 h 37 m,,Unapproved
+May-08-2018,Shiva Manhar,Raipur HQ,,11:05,20:05,0 h 26 m ,9 h 23 m,,Unapproved
+May-08-2018,Kulbhushan Ugemuge,Raipur HQ,Product,09:05,17:05,0 h 0 m ,32 h 30 m,,Unapproved
+May-09-2018,Shiva Manhar,Raipur HQ,,10:05,20:05,0 h 42 m ,10 h 3 m,,Unapproved
+May-09-2018,Vipplove Vishwakarma,Raipur HQ,,10:05,19:05,0 h 24 m ,9 h 4 m,,Unapproved
+May-09-2018,Akash Sharma,Raipur HQ,,10:05,19:05,0 h 24 m ,9 h 4 m,,Unapproved
+May-09-2018,Kulbhushan Ugemuge,Raipur HQ,Product,09:05,17:05,0 h 0 m ,8 h 30 m,,Unapproved
+May-09-2018,Akash Chandrakar,Raipur HQ,Product,10:05,21:05,0 h 0 m ,11 h 45 m,,Unapproved
+May-10-2018,Shiva Manhar,Raipur HQ,Product,10:05,22:05,0 h 14 m ,12 h 0 m,,Unapproved
+May-10-2018,Akash Sharma,Raipur HQ,,10:05,19:05,0 h 20 m ,8 h 52 m,,Unapproved
+May-10-2018,Vipplove Vishwakarma,Raipur HQ,,10:05,19:05,0 h 22 m ,8 h 49 m,,Unapproved
+May-10-2018,Akash Chandrakar,Raipur HQ,,10:05,21:05,0 h 0 m ,10 h 48 m,,Unapproved
+May-11-2018,Shiva Manhar,Raipur HQ,Product,10:05,20:05,0 h 14 m ,9 h 30 m,,Unapproved
+May-11-2018,Vipplove Vishwakarma,Raipur HQ,Product,11:05,19:05,0 h 14 m ,8 h 45 m,,Unapproved
+May-11-2018,Akash Sharma,Raipur HQ,,10:05,19:05,5 h 18 m ,9 h 0 m,,Unapproved
+May-11-2018,Akash Chandrakar,Raipur HQ,,10:05,21:05,0 h 0 m ,10 h 58 m,,Unapproved
+May-12-2018,Shiva Manhar,Raipur HQ,,09:05,13:05,0 h 10 m ,3 h 20 m,,Unapproved
+May-12-2018,Shiva Manhar,Raipur HQ,,13:05,18:05,0 h 44 m ,5 h 35 m,,Unapproved
+May-12-2018,Akash Chandrakar,Raipur HQ,,11:05,21:05,0 h 0 m ,10 h 27 m,,Unapproved
+May-12-2018,Akash Sharma,Raipur HQ,,10:05,19:05,0 h 22 m ,9 h 1 m,,Unapproved
+May-12-2018,Vipplove Vishwakarma,Raipur HQ,,10:05,19:05,0 h 22 m ,8 h 59 m,,Unapproved
+May-13-2018,Shiva Manhar,Raipur HQ,Product,10:05,19:05,0 h 44 m ,8 h 45 m,,Unapproved
+May-13-2018,Akash Chandrakar,Raipur HQ,,10:05,20:05,0 h 0 m ,9 h 41 m,,Approved
+May-14-2018,Shiva Manhar,Raipur HQ,,10:05,18:05,0 h 49 m ,8 h 54 m,,Unapproved
+May-14-2018,Akash Sharma,Raipur HQ,Product,11:05,19:05,1 h 51 m ,8 h 15 m,,Unapproved
+May-14-2018,Akash Chandrakar,Raipur HQ,,11:05,21:05,0 h 0 m ,10 h 12 m,,Unapproved
+May-14-2018,Vipplove Vishwakarma,Raipur HQ,,11:05,19:05,0 h 42 m ,8 h 23 m,,Unapproved
+May-14-2018,Kulbhushan Ugemuge,Raipur HQ,Business,09:05,09:05,0 h 0 m ,0 h 15 m,,Unapproved
+May-15-2018,Akash Sharma,Raipur HQ,,10:05,19:05,0 h 28 m ,8 h 51 m,,Unapproved
+May-15-2018,Vipplove Vishwakarma,Raipur HQ,Product,11:05,19:05,0 h 23 m ,8 h 45 m,,Unapproved
+May-15-2018,Akash Chandrakar,Raipur HQ,,10:05,21:05,0 h 0 m ,10 h 32 m,,Unapproved
+May-15-2018,Shiva Manhar,Raipur HQ,,10:05,21:05,2 h 53 m ,10 h 42 m,,Unapproved
+May-16-2018,Akash Chandrakar,Raipur HQ,,10:05,21:05,0 h 0 m ,11 h 17 m,,Unapproved
+May-16-2018,Shiva Manhar,Raipur HQ,,10:05,19:05,0 h 40 m ,9 h 16 m,,Unapproved
+May-16-2018,Vipplove Vishwakarma,Raipur HQ,Product,11:05,20:05,0 h 45 m ,9 h 0 m,,Unapproved
+May-16-2018,Akash Sharma,Raipur HQ,Product,11:05,20:05,0 h 45 m ,9 h 0 m,,Unapproved
+May-17-2018,Shiva Manhar,Raipur HQ,,10:05,19:05,0 h 52 m ,8 h 47 m,,Unapproved
+May-17-2018,Akash Chandrakar,Raipur HQ,,10:05,21:05,0 h 0 m ,10 h 42 m,,Unapproved
+May-17-2018,Akash Sharma,Raipur HQ,,10:05,19:05,0 h 18 m ,8 h 58 m,,Unapproved
+May-17-2018,Vipplove Vishwakarma,Raipur HQ,,10:05,19:05,0 h 27 m ,8 h 58 m,,Unapproved
+May-18-2018,Akash Sharma,Raipur HQ,,10:05,19:05,0 h 26 m ,8 h 55 m,,Unapproved
+May-18-2018,Vipplove Vishwakarma,Raipur HQ,,10:05,19:05,0 h 26 m ,8 h 54 m,,Unapproved
+May-19-2018,Akash Chandrakar,Raipur HQ,Product,10:05,22:05,0 h 0 m ,11 h 15 m,,Unapproved
+May-19-2018,Akash Sharma,Raipur HQ,,11:05,19:05,0 h 41 m ,8 h 45 m,,Unapproved
+May-19-2018,Vipplove Vishwakarma,Raipur HQ,,10:05,19:05,0 h 20 m ,8 h 52 m,,Unapproved
+May-20-2018,Akash Chandrakar,Raipur HQ,Product,13:05,21:05,0 h 0 m ,7 h 45 m,,Unapproved
+May-21-2018,Shiva Manhar,Raipur HQ,Product,10:05,19:05,0 h 25 m ,8 h 45 m,9 h 0 m ,Unapproved
+May-21-2018,Akash Chandrakar,Raipur HQ,Product,10:05,21:05,0 h 15 m ,10 h 45 m,12 h 0 m ,Unapproved
+May-22-2018,Akash Chandrakar,Raipur HQ,Product,21:05,21:05,,,12 h 0 m ,Unapproved
+May-22-2018,Vipplove Vishwakarma,Raipur HQ,Product,10:05,19:05,0 h 35 m ,8 h 57 m,9 h 0 m ,Unapproved
+May-22-2018,Akash Sharma,Raipur HQ,Product,10:05,19:05,0 h 21 m ,8 h 56 m,9 h 0 m ,Unapproved
+May-22-2018,Shiva Manhar,Raipur HQ,Product,09:05,18:05,0 h 13 m ,8 h 39 m,9 h 0 m ,Unapproved
+May-23-2018,Shiva Manhar,Raipur HQ,Product,09:05,18:05,0 h 0 m ,8 h 45 m,9 h 0 m ,Unapproved
+May-23-2018,Akash Sharma,Raipur HQ,Product,10:05,19:05,0 h 29 m ,8 h 57 m,9 h 0 m ,Approved
+May-23-2018,Vipplove Vishwakarma,Raipur HQ,Product,10:05,19:05,0 h 29 m ,8 h 58 m,9 h 0 m ,Unapproved
+May-24-2018,Shiva Manhar,Raipur HQ,Product,10:05,19:05,0 h 30 m ,9 h 0 m,9 h 0 m ,Unapproved
+May-24-2018,Akash Chandrakar,Raipur HQ,Product,10:05,20:05,0 h 0 m ,9 h 44 m,12 h 0 m ,Unapproved
+May-24-2018,Vipplove Vishwakarma,Raipur HQ,Product,10:05,19:05,0 h 23 m ,9 h 3 m,9 h 0 m ,Unapproved
+May-24-2018,Akash Sharma,Raipur HQ,Product,10:05,19:05,0 h 18 m ,9 h 2 m,9 h 0 m ,Unapproved
+May-25-2018,Shiva Manhar,Raipur HQ,Product,09:05,00:11,,,9 h 0 m ,Unapproved
+May-25-2018,Vipplove Vishwakarma,Raipur HQ,Product,10:05,00:11,,,9 h 0 m ,Unapproved
+May-25-2018,Akash Sharma,Raipur HQ,Product,10:05,00:11,,,9 h 0 m ,Unapproved
