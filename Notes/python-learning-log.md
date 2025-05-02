@@ -10,3 +10,5 @@
 
 ## 2025-05-02 (My Birthday!!)
 - Loaded timesheet.csv into pandas, getting the info and viewing the top 5 rows with head(), parse 'Total hrs' and convert from string object to float so we can remove data with 0 hours in that column, renamed Name-> Employee_name, and saved to Parquet after pip installing pyarrow
+
+- Added a Pandas cheat sheet with patterns that will be helpful to retaining syntax and steps needed
