@@ -21,3 +21,15 @@ df = df[df["value"] > 0].dropna(subset=["value"])
 
 ## Save New Clean Output
 df.to_parquet("clean.parquet", index=False)
+
+## Parsing Hours and avoiding NA strings
+def parse_hours(hstr):
+    """'8 h 44 m' -> 8.73333'"""
+    if pd.isna(hstr):
+        return pd.NA
+    parts = hstr.strip().split() # ['8', 'h', '44', 'm']
+    hours = int(parts[0])
+    minutes = int(parts[2])
+
+    return hours + minutes / 60
+df["hours_worked"] = raw["Total hrs"].apply(parse_hours)
