@@ -33,3 +33,8 @@ def parse_hours(hstr):
 
     return hours + minutes / 60
 df["hours_worked"] = raw["Total hrs"].apply(parse_hours)
+
+## Running Total per Group
+'''python
+df = df.sort_values(["key","date"])
+df["cumulative_metric"] = = df.groupby("key")["metric".cumsum()

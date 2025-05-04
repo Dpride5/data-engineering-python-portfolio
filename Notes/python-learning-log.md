@@ -19,3 +19,4 @@
 
 ## 2025-05-04
 - Sorted values by employee_name and Date, added cumulative_hours column by using .groupby() and next used .cumsum() to get the cumulative sum of the values after grouping, queryed a single employee using .query() and saved new parquet
+- Set up the Gold Medallion layer
