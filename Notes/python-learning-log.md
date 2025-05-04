@@ -16,3 +16,6 @@
 ## 2025-05-03
 - Worked with .groupby() for grouping by a certain column just like in sql, .agg() for aggregations (think sum, count, etc.), and then .sortvalues() where we can sort ascending descending
 - Added an additional column to the data set to get the percent of the total
+
+## 2025-05-04
+- Sorted values by employee_name and Date, added cumulative_hours column by using .groupby() and next used .cumsum() to get the cumulative sum of the values after grouping, queryed a single employee using .query() and saved new parquet
