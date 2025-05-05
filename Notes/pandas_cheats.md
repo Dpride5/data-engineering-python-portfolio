@@ -38,3 +38,18 @@ df["hours_worked"] = raw["Total hrs"].apply(parse_hours)
 '''python
 df = df.sort_values(["key","date"])
 df["cumulative_metric"] = = df.groupby("key")["metric".cumsum()
+
+## Basic Pandas CLI with argparse
+```python
+import argparse, pandas as pd
+def main(src, dest):
+    df = pd.read_csv(src)
+    # ... transforms ...
+    df.to_parquet(dest, index=False)
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--src", default="data/input.csv")
+    parser.add_argument("--dest", default="data/output.parquet")
+    args = parser.parse_args()
+    main(args.src, args.dest)

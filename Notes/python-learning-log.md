@@ -20,3 +20,7 @@
 ## 2025-05-04
 - Sorted values by employee_name and Date, added cumulative_hours column by using .groupby() and next used .cumsum() to get the cumulative sum of the values after grouping, queryed a single employee using .query() and saved new parquet
 - Set up the Gold Medallion layer
+
+## 2025-05-05
+-  Wrapped clean + agg into argparse CLI; prints row countsm writes Parquet outputs
+-  Debugged ETL script path; now loads via src arg and runs from repo root
