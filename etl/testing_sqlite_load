@@ -1,0 +1,6 @@
+import sqlite3
+conn = sqlite3.connect("data/timesheet.db")
+rows = conn.execute("SELECT * FROM employee_hours LIMIT 5;").fetchall()
+for r in rows:
+    print(r)
+conn.close()

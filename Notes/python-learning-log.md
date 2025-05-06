@@ -25,3 +25,6 @@
 -  Wrapped clean data + agg data into argparse CLI; prints row counts, writes Parquet outputs
 -  Debugged ETL script path; now loads via src arg and runs from repo root
 - CLI is important because it allows for parameterization, same script works for dev staging and prod with no code edit, its automation friendly, gives a free help screen for self documentation (argparse), a single function that allows for easy unit test with temp files, and we can add logging, retry loops, timing metics in one place.
+
+## 2025-05-06
+- Loaded employee_hours Parquet into SQLite(to_sql replace); verified row count with SELECT.

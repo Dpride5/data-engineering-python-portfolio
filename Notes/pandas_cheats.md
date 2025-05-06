@@ -62,3 +62,23 @@ if __name__ == "__main__":
 | **Self‑documentation**  | `argparse` gives a free `--help` screen.                                       | New teammates see valid options instantly; easier hand‑off. | “Running `python etl.py --help` shows all supported flags—no need to dig through code.”                                       |
 | **Testability**         | A single function that takes paths → easy to unit‑test with temp files.        | Proves you think about maintainability.                     | “Because the function is pure (src → dest), we can unit‑test it by passing a small sample file and asserting on output rows.” |
 | **Resilience hooks**    | Now we can add logging, retry loops, timing metrics in one place.              | Builds toward prod‑ready pipeline.                          | “The CLI wrapper gives us a single entry point to add logging and retries later.”                                             |
+
+
+## Pandas -> SQLite
+'''python
+import sqlite3, pandas as pd
+conn = sqlite3.connect("data/dbname.db")
+df = pd.read_parquet("file.parquet")
+df.to_sql("table_name", conn, if_exists="replace", index=False)
+
+
+---
+
+### Why this brick matters (interview sound‑bites)
+
+| Point | 1‑line explanation |
+|-------|--------------------|
+| **Completes ETL** | “The pipeline now ends in a query‑able DB, not just files.” |
+| **Idempotent** | `if_exists="replace"` means reruns won’t duplicate rows. |
+| **Portable** | SQLite keeps the demo self‑contained; same code swaps to Postgres with `sqlalchemy`. |
+| **BI Ready** | “Now any BI or dashboard tool can connect and query `employee_hours`.” |
