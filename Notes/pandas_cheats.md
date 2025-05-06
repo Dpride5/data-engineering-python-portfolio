@@ -53,3 +53,12 @@ if __name__ == "__main__":
     parser.add_argument("--dest", default="data/output.parquet")
     args = parser.parse_args()
     main(args.src, args.dest)
+
+
+| Aspect                  | What we did                                                                    | Why it matters                                              | How to say it in an interview                                                                                                 |
+| ----------------------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| **Parameterization**    | Replaced hard‑coded file paths with `--src`, `--out_clean`, `--out_emp` flags. | Same script works for dev, staging, prod—no code edits.     | “I exposed the paths as CLI flags so Ops can point the pipeline at any bucket or date partition without touching the code.”   |
+| **Automation‑friendly** | Put the logic in `run_etl()` and called it from `if __name__ == "__main__":`.  | Lets cron, Airflow, or GitHub Actions call it directly.     | “I packaged the ETL as a command‑line tool so we can drop it into an Airflow DAG or CI job with a single bash command.”       |
+| **Self‑documentation**  | `argparse` gives a free `--help` screen.                                       | New teammates see valid options instantly; easier hand‑off. | “Running `python etl.py --help` shows all supported flags—no need to dig through code.”                                       |
+| **Testability**         | A single function that takes paths → easy to unit‑test with temp files.        | Proves you think about maintainability.                     | “Because the function is pure (src → dest), we can unit‑test it by passing a small sample file and asserting on output rows.” |
+| **Resilience hooks**    | Now we can add logging, retry loops, timing metrics in one place.              | Builds toward prod‑ready pipeline.                          | “The CLI wrapper gives us a single entry point to add logging and retries later.”                                             |

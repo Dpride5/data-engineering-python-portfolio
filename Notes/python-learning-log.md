@@ -22,5 +22,6 @@
 - Set up the Gold Medallion layer
 
 ## 2025-05-05
--  Wrapped clean + agg into argparse CLI; prints row countsm writes Parquet outputs
+-  Wrapped clean data + agg data into argparse CLI; prints row counts, writes Parquet outputs
 -  Debugged ETL script path; now loads via src arg and runs from repo root
+- CLI is important because it allows for parameterization, same script works for dev staging and prod with no code edit, its automation friendly, gives a free help screen for self documentation (argparse), a single function that allows for easy unit test with temp files, and we can add logging, retry loops, timing metics in one place.
