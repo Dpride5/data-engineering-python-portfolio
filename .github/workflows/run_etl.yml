@@ -2,7 +2,7 @@ name: Run Timesheet ETL
 
 on:
   schedule:
-    - con: '50 9 * * *'  # 09:50 UTC = 3:50 AM CDT
+    - cron: '50 9 * * *'  # 09:50 UTC = 3:50 AM CDT
   workflow_dispatch:   # manual trigger
 
 jobs:
@@ -22,7 +22,7 @@ jobs:
         run: pip install pandas pyarrow
       
       - name: Run ETL
-        runL python etl/01_timesheet_etl.py
+        run: python etl/01_timesheet_etl.py
 
       - name: Verify row count
         run: |
