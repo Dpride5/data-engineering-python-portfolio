@@ -3,7 +3,7 @@ name: Run Timesheet ETL
 on:
   schedule:
     - con: '50 9 * * *'  # 09:50 UTC = 3:50 AM CDT
-  workflow_dispatch:{}   # manual trigger
+  workflow_dispatch:   # manual trigger
 
 jobs:
   etl:
