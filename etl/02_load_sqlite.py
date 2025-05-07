@@ -9,7 +9,7 @@ def load_to_sqlite(parquet_path, db_path="data/timesheet.db", table="employee_ho
     df = pd.read_parquet(parquet_path)
 
     conn = sqlite3.connect(db_path)
-    df.to_sql(table, conn, if_exists="replace", index=False)
+    df.to_sql(table, conn, if_exists="replace", index=False) # Gets rid of duplicating behaviour by replacing
 
     count = conn.execute(f"SELECT COUNT(*) FROM {table}").fetchone()[0]
     conn.close()

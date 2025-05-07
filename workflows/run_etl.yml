@@ -1,0 +1,35 @@
+name: Run Timesheet ETL
+
+on:
+  schedule:
+    - con: '50 9 * * *'  # 09:50 UTC = 3:50 AM CDT
+workflow_dispatch:{}     # manual trigger
+
+jobs:
+  etl:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+        
+      - name: Install dependencies
+        run: pip install pandas pyarrow
+      
+      - name: Run ETL
+        runL python etl/01_timesheet_etl.py
+
+      - name: Verify row count
+        run: |
+          python - << 'PY'
+          import sqlite3
+          con = sqlite3.connect('data/timesheet.db')
+          c = con.execute('SELECT COUNT(*) FROM employee_hours').fetchone()[0]
+          assert c > 0, "No rows loaded"
+          print("Row count:", c)
+          PY
