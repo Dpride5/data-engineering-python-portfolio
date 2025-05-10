@@ -1,0 +1,12 @@
+# Data Engineering SQL & Python Portfolio
+
+**Automated ETL Pipeline**  
+![ETL Status] https://github.com/Dpride5/data-engineering-python-portfolio/actions/workflows/run_etl.yml/badge.svg
+
+This repo demonstrates end-to-end data-engineering skills:
+- **SQL**: complex queries, window functions, CTEs  (See data-engineering-sql-portfolio)
+- **Python & Pandas**: data loading, cleaning, aggregation, running totals  
+- **ETL Automation**: CLI script (`argparse`) & GitHub Action (scheduled + on‑push)  
+- **Database Load**: writes aggregated data into SQLite (`timesheet.db`)
+
+---
