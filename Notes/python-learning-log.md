@@ -28,3 +28,9 @@
 
 ## 2025-05-06
 - Loaded employee_hours Parquet into SQLite(to_sql replace); verified row count with SELECT.
+
+## 2025-05-07
+- Created Github action to run the ETL pipeline, achieved success for the run after working through some errors
+
+## 2025-05-10
+– Built Power BI dashboard from parquet output; bar chart, card, date slicer, first DAX measure.
