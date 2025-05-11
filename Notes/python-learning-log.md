@@ -33,4 +33,7 @@
 - Created Github action to run the ETL pipeline, achieved success for the run after working through some errors
 
 ## 2025-05-10
-– Built Power BI dashboard from parquet output; bar chart, card, date slicer, first DAX measure.
+- Built Power BI dashboard from parquet output; bar chart, card, date slicer, first DAX measure.
+
+## 2025-05-11
+- Adding in a graph showcasing the percent total of hours worked for each employee
