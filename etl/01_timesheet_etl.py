@@ -6,9 +6,9 @@ def parse_hours(hstr):
     if pd.isna(hstr):
         return pd.NA
     parts = hstr.strip().split()
-    hours = int(parts[0])
-    minutes = int(parts[2])
-    return hours + minutes * 60
+    hours = float(parts[0])
+    minutes = float(parts[2])
+    return hours + (minutes / 60)
 
 def run_etl(src, out_clean, out_emp):
 
