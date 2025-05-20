@@ -4,7 +4,6 @@
 - Practiced list, simple function for list comprehension in `core/01_basics.py`; understood every line.
 - Wrote list + function + list-comprehension; clarified correct loop variable usage. 'core/01_basics_drill.py'
 
-
 ## 2025-04-30
 - Loaded a timesheet.csv into pandas, inspected dtypes, head(), and summary stats.
 
@@ -37,3 +36,15 @@
 
 ## 2025-05-11
 - Adding in a graph showcasing the percent total of hours worked for each employee
+
+## 2025-05-12
+- Created spark311 venv (Python 3.11) and registered Jupyter kernel.
+- Investigated PySpark ⇄ Parquet timestamp issue; learned Spark only supports up to Py 3.11.
+- Wrote first PySpark notebook outline to aggregate hours_worked → employee_hours_spark.parquet (ran but hit local driver socket reset — documented fix ideas).
+
+
+## 2025-05-20
+- Added Apache Airflow DAG skeleton airflow/dags/timesheet_etl_dag.py:
+- Daily 03:00 cron, BashOperator runs ETL CLI, downstream row-count validation task.
+- Updated airflow/README.md with “why DAG vs cron” explanation.
+- Spoke 30-sec explanation of DAG, operators, dependencies.
