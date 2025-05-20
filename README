@@ -10,3 +10,4 @@ This repo demonstrates end-to-end data-engineering skills:
 - **Database Load**: writes aggregated data into SQLite (`timesheet.db`)
 
 ---
+timesheet_etl_dag.py runs nightly at 3 AM: executes Python ETL to write cleaned Parquet, then a downstream task checks row-count in the target DB and fails the run if zero rows, surfacing alerts in Airflow's UI.
