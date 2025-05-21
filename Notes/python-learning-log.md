@@ -48,3 +48,6 @@
 - Daily 03:00 cron, BashOperator runs ETL CLI, downstream row-count validation task.
 - Updated airflow/README.md with “why DAG vs cron” explanation.
 - Spoke 30-sec explanation of DAG, operators, dependencies.
+
+## 2025-05-21
+- Pandas drill: used groupby.cumcount() to replicate SQL ROW_NUMBER and extract 2nd highest salary per department (Interview Drills)
