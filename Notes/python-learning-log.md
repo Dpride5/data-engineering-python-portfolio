@@ -51,3 +51,8 @@
 
 ## 2025-05-21
 - Pandas drill: used groupby.cumcount() to replicate SQL ROW_NUMBER and extract 2nd highest salary per department (Interview Drills)
+
+## 2025-05-22
+- Enhanced ETL script: added basic logging (INFO/ERROR/CRITICAL) to logs/timesheet_etl.log.
+- Wrapped 'run_etl' in 3-attempt retry loop with 60-second back-off; script now exits non-zero after final failure.
+- Manual test: missing-file run shows 3 logged retries + CRITICAL; valid run logs single SUCCESS

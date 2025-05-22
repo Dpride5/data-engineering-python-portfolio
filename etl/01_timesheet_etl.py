@@ -1,14 +1,22 @@
+# Updated on 5/22/2025
+import logging # NEW
+import time # NEW
+from pathlib import Path # NEW
+
+
 import argparse
 import pandas as pd
 
 # -----parser-----
-def parse_hours(hstr):
-    if pd.isna(hstr):
-        return pd.NA
-    parts = hstr.strip().split()
-    hours = float(parts[0])
-    minutes = float(parts[2])
-    return hours + (minutes / 60)
+# Changed 5/22/2025
+
+# def parse_hours(hstr):
+#     if pd.isna(hstr):
+#         return pd.NA
+#     parts = hstr.strip().split()
+#     hours = float(parts[0])
+#     minutes = float(parts[2])
+#     return hours + (minutes / 60)
 
 def run_etl(src, out_clean, out_emp):
 
@@ -43,11 +51,53 @@ def run_etl(src, out_clean, out_emp):
     print(f"Clean rows {len(df):,} | Employees: {len(emp_hours):,}")
     print(f"Saved -> {out_clean} and {out_emp}")
 
-if __name__=="__main__":
+# Changed 5/22/2025
+# if __name__=="__main__":
+#     parser = argparse.ArgumentParser(description="Timesheet ETL pipeline")
+#     parser.add_argument("--src", default="data/timesheet.csv")
+#     parser.add_argument("--out_clean", default="data/timesheet_clean.parquet")
+#     parser.add_argument("--out_emp", default="data/employee_hours.parquet")
+#     args = parser.parse_args()
+
+#     run_etl(args.src, args.out_clean, args.out_emp)
+
+# 5. Set up basic logging - 5/22/2025
+
+LOG_DIR = Path("logs")
+LOG_DIR.mkdir(exist_ok=True)
+logging.basicConfig(
+    filename=LOG_DIR / "timesheet_etl.log",
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s"
+)
+
+# 6. Parse CLI arguments (drop into main()) - 5/22/2025
+
+def parse_args():
     parser = argparse.ArgumentParser(description="Timesheet ETL pipeline")
     parser.add_argument("--src", default="data/timesheet.csv")
     parser.add_argument("--out_clean", default="data/timesheet_clean.parquet")
     parser.add_argument("--out_emp", default="data/employee_hours.parquet")
-    args = parser.parse_args()
+    return parser.parse_args()
 
-    run_etl(args.src, args.out_clean, args.out_emp)
+# 7. Main wrapper with retries - 5/22/2025
+
+def main():
+    args = parse_args()
+    max_retries = 3
+    for attempt in range(1, max_retries + 1):
+        try:
+            logging.info(f"ETL attempt {attempt} started")
+            run_etl(args.src, args.out_clean, args.out_emp)
+            logging.info("ETL completed Successfully")
+            break # Success exit loop
+        except Exception as e:
+            logging.error(f"ETL attempt {attempt} failed {e}", exc_info=True)
+            if attempt == max_retries:
+                logging.critical(f"ETL failed after max retries, exiting with error")
+                raise
+            logging.info("Sleeping 60s before retry...")
+            time.sleep(60)
+
+if __name__ == "__main__":
+    main()
