@@ -56,3 +56,7 @@
 - Enhanced ETL script: added basic logging (INFO/ERROR/CRITICAL) to logs/timesheet_etl.log.
 - Wrapped 'run_etl' in 3-attempt retry loop with 60-second back-off; script now exits non-zero after final failure.
 - Manual test: missing-file run shows 3 logged retries + CRITICAL; valid run logs single SUCCESS
+
+## 2025-05-24
+- SQL: used ROW_NUMBER() OVER (PARTITION BY department ORDER BY salary DESC) to rank; filter rank = 2
+- Pandas: replicated logic with sort_values + groupby('dept').cumcount()+1
